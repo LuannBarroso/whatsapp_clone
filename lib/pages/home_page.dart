@@ -14,6 +14,10 @@ class HomePage extends StatelessWidget {
             elevation: 0,
             title: const Padding(
               padding: EdgeInsets.only(top: 10),
+              child: Text(
+                'WhatsApp',
+                style: TextStyle(fontSize: 21),
+              ),
             ),
           ),
         ),
