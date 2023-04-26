@@ -16,8 +16,13 @@ class MyApp extends StatelessWidget {
       title: 'Flutter',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
+          scaffoldBackgroundColor: Colors.white,
+          appBarTheme: const AppBarTheme(
+            color: Color(0xFF075E55),
+          ),
+          bottomSheetTheme: BottomSheetThemeData(
+            backgroundColor: Colors.black.withOpacity(0),
+          )),
       home: const HomePage(),
     );
   }
