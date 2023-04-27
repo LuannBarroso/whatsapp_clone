@@ -41,6 +41,16 @@ class HomePage extends StatelessWidget {
                       ),
                     ),
                   ),
+                  const PopupMenuItem(
+                    value: 1,
+                    child: Text(
+                      "Nova transmissão",
+                      style: TextStyle(
+                        fontSize: 17,
+                        fontWeight: FontWeight.w500,
+                      ),
+                    ),
+                  ),
                 ],
               ),
             ],
