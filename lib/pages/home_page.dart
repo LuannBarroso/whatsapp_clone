@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class HomePage extends StatelessWidget {
-  const HomePage({super.key});
+  const HomePage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -19,15 +19,38 @@ class HomePage extends StatelessWidget {
                 style: TextStyle(fontSize: 21),
               ),
             ),
+            actions: [
+              const Padding(
+                padding: EdgeInsets.only(top: 12, right: 15),
+                child: Icon(
+                  Icons.search,
+                  size: 28,
+                ),
+              ),
+              PopupMenuButton(
+                padding: const EdgeInsets.symmetric(vertical: 20),
+                iconSize: 28,
+                itemBuilder: (context) => [
+                  const PopupMenuItem(
+                    value: 1,
+                    child: Text(
+                      "Novo grupo",
+                      style: TextStyle(
+                        fontSize: 17,
+                        fontWeight: FontWeight.w500,
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+            ],
           ),
         ),
-        backgroundColor: const Color.fromARGB(255, 31, 32, 31),
-        body: const TabBarView(
+        body: Column(
           children: [
-            Icon(Icons.people),
-            Text(''),
-            Text(''),
-            Text(''),
+            Container(
+              color: const Color(0xFF075E55),
+            ),
           ],
         ),
       ),
