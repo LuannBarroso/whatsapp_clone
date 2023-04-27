@@ -61,6 +61,16 @@ class HomePage extends StatelessWidget {
                       ),
                     ),
                   ),
+                  const PopupMenuItem(
+                    value: 1,
+                    child: Text(
+                      "Mensagens Favoritas",
+                      style: TextStyle(
+                        fontSize: 17,
+                        fontWeight: FontWeight.w500,
+                      ),
+                    ),
+                  ),
                 ],
               ),
             ],
