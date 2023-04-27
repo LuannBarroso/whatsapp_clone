@@ -90,6 +90,46 @@ class HomePage extends StatelessWidget {
           children: [
             Container(
               color: const Color(0xFF075E55),
+              child: const TabBar(
+                isScrollable: true,
+                indicatorColor: Colors.white,
+                indicatorWeight: 4,
+                labelStyle:
+                    TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+                tabs: [
+                  SizedBox(
+                    width: 25,
+                    child: Tab(
+                      icon: Icon(Icons.camera_alt),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            SizedBox(
+              width: 80,
+              child: Tab(
+                child: Row(
+                  children: [
+                    const Text("CONVERSAS"),
+                    Container(
+                      height: 20,
+                      width: 20,
+                      decoration: BoxDecoration(
+                        color: Colors.white,
+                        borderRadius: BorderRadius.circular(10),
+                      ),
+                      child: const Text(
+                        "10",
+                        style: TextStyle(
+                          color: Color(0xFF075E55),
+                          fontSize: 14,
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
             ),
           ],
         ),
