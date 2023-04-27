@@ -51,6 +51,16 @@ class HomePage extends StatelessWidget {
                       ),
                     ),
                   ),
+                  const PopupMenuItem(
+                    value: 1,
+                    child: Text(
+                      "Aparelhos conectados",
+                      style: TextStyle(
+                        fontSize: 17,
+                        fontWeight: FontWeight.w500,
+                      ),
+                    ),
+                  ),
                 ],
               ),
             ],
