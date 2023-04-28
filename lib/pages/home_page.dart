@@ -101,18 +101,28 @@ class HomePage extends StatelessWidget {
                   Container(
                     color: Colors.black,
                     width: 25,
+                    height: 25,
                     child: const Tab(
                       icon: Icon(Icons.camera_alt),
                     ),
                   ),
                   // tab 2
                   Container(
-                    width: 80,
+                    width: 90,
+                    height: 40,
                     color: Colors.black,
                     child: Tab(
                       child: Row(
                         children: [
-                          const Text("CONVERSAS"),
+                          const Center(
+                            child: Text(
+                              "CONVERSAS",
+                              style: TextStyle(fontSize: 10),
+                            ),
+                          ),
+                          const SizedBox(
+                            width: 10,
+                          ),
                           Container(
                             height: 20,
                             width: 20,
@@ -120,11 +130,13 @@ class HomePage extends StatelessWidget {
                               color: Colors.white,
                               borderRadius: BorderRadius.circular(10),
                             ),
-                            child: const Text(
-                              "10",
-                              style: TextStyle(
-                                color: Color(0xFF075E55),
-                                fontSize: 14,
+                            child: const Center(
+                              child: Text(
+                                "10",
+                                style: TextStyle(
+                                  color: Color(0xFF075E55),
+                                  fontSize: 12,
+                                ),
                               ),
                             ),
                           ),
@@ -134,14 +146,15 @@ class HomePage extends StatelessWidget {
                   ),
                   // tab 3
                   Container(
-                    width: 90,
+                    width: 86,
+                    height: 30,
                     color: Colors.black,
                     child: const Tab(
                       child: Text("STATUS"),
                     ),
                   ),
                   Container(
-                    width: 90,
+                    width: 86,
                     color: Colors.black,
                     child: const Tab(
                       child: Text("LIGAÇÔES"),
