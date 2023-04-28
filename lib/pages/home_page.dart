@@ -90,45 +90,64 @@ class HomePage extends StatelessWidget {
           children: [
             Container(
               color: const Color(0xFF075E55),
-              child: const TabBar(
+              child: TabBar(
                 isScrollable: true,
                 indicatorColor: Colors.white,
                 indicatorWeight: 4,
                 labelStyle:
-                    TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+                    const TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
                 tabs: [
-                  SizedBox(
+                  // tab 1
+                  Container(
+                    color: Colors.black,
                     width: 25,
-                    child: Tab(
+                    child: const Tab(
                       icon: Icon(Icons.camera_alt),
                     ),
                   ),
-                ],
-              ),
-            ),
-            SizedBox(
-              width: 80,
-              child: Tab(
-                child: Row(
-                  children: [
-                    const Text("CONVERSAS"),
-                    Container(
-                      height: 20,
-                      width: 20,
-                      decoration: BoxDecoration(
-                        color: Colors.white,
-                        borderRadius: BorderRadius.circular(10),
-                      ),
-                      child: const Text(
-                        "10",
-                        style: TextStyle(
-                          color: Color(0xFF075E55),
-                          fontSize: 14,
-                        ),
+                  // tab 2
+                  Container(
+                    width: 80,
+                    color: Colors.black,
+                    child: Tab(
+                      child: Row(
+                        children: [
+                          const Text("CONVERSAS"),
+                          Container(
+                            height: 20,
+                            width: 20,
+                            decoration: BoxDecoration(
+                              color: Colors.white,
+                              borderRadius: BorderRadius.circular(10),
+                            ),
+                            child: const Text(
+                              "10",
+                              style: TextStyle(
+                                color: Color(0xFF075E55),
+                                fontSize: 14,
+                              ),
+                            ),
+                          ),
+                        ],
                       ),
                     ),
-                  ],
-                ),
+                  ),
+                  // tab 3
+                  Container(
+                    width: 90,
+                    color: Colors.black,
+                    child: const Tab(
+                      child: Text("STATUS"),
+                    ),
+                  ),
+                  Container(
+                    width: 90,
+                    color: Colors.black,
+                    child: const Tab(
+                      child: Text("LIGAÇÔES"),
+                    ),
+                  ),
+                ],
               ),
             ),
           ],
