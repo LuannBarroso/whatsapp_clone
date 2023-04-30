@@ -99,7 +99,7 @@ class HomePage extends StatelessWidget {
                 tabs: [
                   // tab 1
                   Container(
-                    color: Colors.black,
+                    color: const Color(0xFF075E55),
                     width: 25,
                     height: 25,
                     child: const Tab(
@@ -108,20 +108,18 @@ class HomePage extends StatelessWidget {
                   ),
                   // tab 2
                   Container(
-                    width: 90,
-                    height: 40,
-                    color: Colors.black,
+                    width: 110,
+                    height: 20,
+                    color: const Color(0xFF075E55),
                     child: Tab(
                       child: Row(
                         children: [
-                          const Center(
-                            child: Text(
-                              "CONVERSAS",
-                              style: TextStyle(fontSize: 10),
-                            ),
+                          const Text(
+                            "CONVERSAS",
+                            style: TextStyle(fontSize: 14),
                           ),
                           const SizedBox(
-                            width: 10,
+                            width: 04,
                           ),
                           Container(
                             height: 20,
