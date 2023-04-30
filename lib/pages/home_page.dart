@@ -122,19 +122,18 @@ class HomePage extends StatelessWidget {
                             width: 04,
                           ),
                           Container(
+                            alignment: Alignment.center,
                             height: 20,
                             width: 20,
                             decoration: BoxDecoration(
                               color: Colors.white,
                               borderRadius: BorderRadius.circular(10),
                             ),
-                            child: const Center(
-                              child: Text(
-                                "10",
-                                style: TextStyle(
-                                  color: Color(0xFF075E55),
-                                  fontSize: 12,
-                                ),
+                            child: const Text(
+                              "10",
+                              style: TextStyle(
+                                color: Color(0xFF075E55),
+                                fontSize: 12,
                               ),
                             ),
                           ),
