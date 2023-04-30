@@ -144,7 +144,7 @@ class HomePage extends StatelessWidget {
                   ),
                   // tab 3
                   Container(
-                    width: 86,
+                    width: 74,
                     height: 30,
                     color: const Color(0xFF075E55),
                     child: const Tab(
@@ -152,7 +152,7 @@ class HomePage extends StatelessWidget {
                     ),
                   ),
                   Container(
-                    width: 86,
+                    width: 76,
                     color: const Color(0xFF075E55),
                     child: const Tab(
                       child: Text("LIGAÇÔES"),
