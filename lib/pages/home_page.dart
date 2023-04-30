@@ -153,7 +153,7 @@ class HomePage extends StatelessWidget {
                   ),
                   Container(
                     width: 86,
-                    color: Colors.black,
+                    color: const Color(0xFF075E55),
                     child: const Tab(
                       child: Text("LIGAÇÔES"),
                     ),
